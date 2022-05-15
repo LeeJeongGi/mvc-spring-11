@@ -64,7 +64,7 @@ public class ServletUploadControllerV2 {
             //파일에 저장하기
             if (StringUtils.hasText(part.getSubmittedFileName())) {
                 String fullPath = fileDir + part.getSubmittedFileName();
-                log.info("파일ㄹ 저장 fullPath={}", fullPath);
+                log.info("파일 저장 fullPath={}", fullPath);
                 part.write(fullPath);
             }
 
